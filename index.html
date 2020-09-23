@@ -1,0 +1,196 @@
+<!DOCTYPE html>
+<!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
+<!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
+<!--[if IE 8]>         <html class="no-js lt-ie9"> <![endif]-->
+<!--[if gt IE 8]><!-->
+<html class="no-js">
+  <!--<![endif]-->
+  <head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <title>Path</title>
+    <meta name="description" content="" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <!-- <link
+      href="https://cdn-images.mailchimp.com/embedcode/slim-10_7.css"
+      rel="stylesheet"
+      type="text/css"
+    /> -->
+    <link rel="stylesheet" href="./main.css" />
+  </head>
+  <body>
+    <!--[if lt IE 7]>
+      <p class="browsehappy">
+        You are using an <strong>outdated</strong> browser. Please
+        <a href="#">upgrade your browser</a> to improve your experience and view
+        this page.
+      </p>
+    <![endif]-->
+
+    <div class="container">
+      <header>
+        <div class="header-content">
+          <img src="./images/path-logo.webp" />
+          <p>The simple multi-tool to supercharge your business.</p>
+
+          <a href="#sign-up">Get the app</a>
+        </div>
+      </header>
+      <section class="info">
+        <p>Everything in one place.</p>
+        <div class="accent-divider"></div>
+        <p>
+          Path is a mobile app for freelancers and small business owners with
+          all of the basic tools to support a growing business.
+        </p>
+        <div class="cards">
+          <div class="card">
+            <img src="./images/books.jpg" width="200px" />
+            <div class="card-content">
+              <p>Tools</p>
+              <p>
+                A suite of tools to keep your business organized and
+                streamlined, so you can focus on what you do best.
+              </p>
+              <div class="card-list">
+                <hr />
+                <ul>
+                  <li>Business analytics</li>
+                  <li>Project and client tracking</li>
+                  <li>Timesheets</li>
+                  <li>Contract templates</li>
+                  <li>Expense management</li>
+                  <li>Invoicing</li>
+                </ul>
+              </div>
+            </div>
+          </div>
+          <div class="card">
+            <img src="./images/puzzle.jpg" width="200px" />
+            <div class="card-content">
+              <p>Guides</p>
+              <p>
+                Guides on how to form and grow a business, created by
+                experienced professionals.
+              </p>
+              <div class="card-list">
+                <hr />
+                <ul>
+                  <li>Legal</li>
+                  <li>Tax</li>
+                  <li>Insurance</li>
+                  <li>Retirement</li>
+                  <li>Investment</li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+    </div>
+    <div class="container-wide-bg">
+      <section class="sign-up" id="sign-up">
+        <!-- <hr /> -->
+        <p>Sign up for the free beta.</p>
+        <div class="accent-divider"></div>
+        <p>
+          Building a business is hard. Time and money are two of your most
+          valuable resources. Path is designed to be the simple single tool you
+          can rely on.
+        </p>
+        <p>
+          <u>Enter your email address</u>* and you'll be the first to get full
+          access to the <strong>iOS</strong> and <strong>Android</strong> beta
+          release for <strong>free</strong>​.
+        </p>
+        <!-- Begin Mailchimp Signup Form -->
+        <div id="mc_embed_signup">
+          <form
+            action="https://app.us2.list-manage.com/subscribe/post?u=ccc6a49bf4fa911abf2ba6c7a&amp;id=4efc06dccc"
+            method="post"
+            id="mc-embedded-subscribe-form"
+            name="mc-embedded-subscribe-form"
+            class="validate"
+            target="_blank"
+            novalidate
+          >
+            <div class="input-container" id="mc_embed_signup_scroll">
+              <input
+                type="email"
+                value=""
+                name="EMAIL"
+                class="email"
+                id="mce-EMAIL"
+                placeholder="email address"
+                required
+              />
+              <!-- real people should not fill this in and expect good things - do not remove this or risk form bot signups-->
+              <div style="position: absolute; left: -5000px" aria-hidden="true">
+                <input
+                  type="text"
+                  name="b_ccc6a49bf4fa911abf2ba6c7a_4efc06dccc"
+                  tabindex="-1"
+                  value=""
+                />
+              </div>
+              <input
+                type="submit"
+                value="Submit"
+                name="submit"
+                id="mc-embedded-subscribe"
+                class="button"
+              />
+            </div>
+          </form>
+
+          <p class="disclaimer">
+            *We won't use your email for any other purpose or give it to anyone
+            without your permission.
+          </p>
+        </div>
+        <!--End mc_embed_signup-->
+        <p id="message" class="success">Success! Email submitted.</p>
+      </section>
+      <hr class="dark" />
+      <footer>
+        <a href="mailto:team@pathpro.app">Contact us</a>
+        <p class="copyright">
+          © 2020 Third Floor Technologies | All Rights Reserved
+        </p>
+      </footer>
+    </div>
+
+    <!-- <script src="" async defer></script> -->
+    <script
+      type="text/javascript"
+      src="https://s3.amazonaws.com/downloads.mailchimp.com/js/mc-validate.js"
+    ></script>
+    <script type="text/javascript">
+      (function ($) {
+        let form = $("#mc-embedded-subscribe-form");
+
+        window.fnames = new Array();
+        window.ftypes = new Array();
+        fnames[0] = "EMAIL";
+
+        // console.log(form);
+        form.submit(function () {
+          // console.log("form hit");
+          let signupForm = $("#mc_embed_signup");
+          let emailInput = $("#mce-EMAIL");
+          console.log(emailInput.hasClass("mce_inline_error"));
+
+          if (emailInput.hasClass("valid")) {
+            // let msg = "Success! Email submitted.";
+            // signupForm[0].reset();
+            emailInput.val("");
+            signupForm.hide();
+            $("#message").show();
+          }
+        });
+      })(jQuery);
+
+      var $mcj = jQuery.noConflict(true);
+    </script>
+  </body>
+</html>
