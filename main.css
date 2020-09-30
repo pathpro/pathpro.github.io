@@ -55,6 +55,7 @@ header svg {
 .header-content p:nth-of-type(1) {
   /* font-weight: bold; */
   margin-bottom: 10px;
+  max-width: 800px;
 }
 
 .header-content p:nth-of-type(2) {
@@ -89,12 +90,12 @@ header svg {
   text-align: center;
 }
 
-.info p:nth-of-type(1) {
+/* .info p:nth-of-type(1) {
   font-size: 26px;
   margin-bottom: 10px;
-}
+} */
 
-.info p:nth-of-type(2) {
+.info p:nth-of-type(1) {
   font-weight: 100;
   font-size: 16px;
 }
@@ -272,11 +273,11 @@ footer .copyright {
     font-size: 22px;
   }
 
-  .info p:nth-of-type(1) {
+  /* .info p:nth-of-type(1) {
     font-size: 30px;
-  }
+  } */
 
-  .info p:nth-of-type(2) {
+  .info p:nth-of-type(1) {
     font-size: 18px;
   }
 
