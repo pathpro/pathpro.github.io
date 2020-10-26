@@ -14,6 +14,12 @@ body {
   position: relative;
   background: #fffff5 url("./images/banner-v3.jpg") no-repeat center top;
   background-size: 100vw;
+  /* disable user copy/paste */
+  -webkit-user-select: none;
+  -webkit-touch-callout: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
 }
 
 header {
@@ -35,6 +41,8 @@ header svg {
 .header-content {
   position: relative;
   z-index: 1;
+  -webkit-transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
   transform: translate(-50%, -50%);
   left: 50%;
   top: 50%;
@@ -67,7 +75,10 @@ header svg {
   border-radius: 10px;
   color: white;
   font-weight: bold;
-  display: flex;
+  display: -webkit-box; /* OLD - iOS 6-, Safari 3.1-6, BB7 */
+  display: -ms-flexbox; /* TWEENER - IE 10 */
+  display: -webkit-flex; /* NEW - Safari 6.1+. iOS 7.1+, BB10 */
+  display: flex; /* NEW, Spec - Firefox, Chrome, Opera */
   align-items: center;
   justify-content: center;
   text-decoration: none;
@@ -114,7 +125,10 @@ header svg {
 }
 
 .cards {
-  display: flex;
+  display: -webkit-box; /* OLD - iOS 6-, Safari 3.1-6, BB7 */
+  display: -ms-flexbox; /* TWEENER - IE 10 */
+  display: -webkit-flex; /* NEW - Safari 6.1+. iOS 7.1+, BB10 */
+  display: flex; /* NEW, Spec - Firefox, Chrome, Opera */
   flex-wrap: wrap;
   align-items: top;
   justify-content: center;
@@ -192,7 +206,10 @@ hr {
 
 /* mailchimp */
 .input-container {
-  display: flex;
+  display: -webkit-box; /* OLD - iOS 6-, Safari 3.1-6, BB7 */
+  display: -ms-flexbox; /* TWEENER - IE 10 */
+  display: -webkit-flex; /* NEW - Safari 6.1+. iOS 7.1+, BB10 */
+  display: flex; /* NEW, Spec - Firefox, Chrome, Opera */
   flex-direction: column;
   max-width: 320px;
   margin: 0 auto;
@@ -235,7 +252,10 @@ p.disclaimer {
 }
 
 footer {
-  display: flex !important;
+  display: -webkit-box !important; /* OLD - iOS 6-, Safari 3.1-6, BB7 */
+  display: -ms-flexbox !important; /* TWEENER - IE 10 */
+  display: -webkit-flex !important; /* NEW - Safari 6.1+. iOS 7.1+, BB10 */
+  display: flex !important; /* NEW, Spec - Firefox, Chrome, Opera */
   flex-direction: column;
   align-items: center;
   justify-content: center;
