@@ -12,12 +12,16 @@
   <title>Path</title>
   <meta name="description" content="" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <!-- <link
-      href="https://cdn-images.mailchimp.com/embedcode/slim-10_7.css"
-      rel="stylesheet"
-      type="text/css"
-    /> -->
   <link rel="stylesheet" href="./main.css" />
+  <!-- Global site tag (gtag.js) - Google Analytics -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=UA-180946191-1"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag() { dataLayer.push(arguments); }
+    gtag('js', new Date());
+
+    gtag('config', 'UA-180946191-1');
+  </script>
 </head>
 
 <body>
@@ -32,15 +36,16 @@
   <div class="container">
     <header>
       <div class="header-content">
-        <svg id="Layer_1" data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"
-          viewBox="0 0 432 134.72">
+        <svg id="Layer_1" data-name="Layer 1" xmlns="http://www.w3.org/2000/svg"
+          xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 432 134.72">
           <defs>
             <style>
               .cls-1 {
                 fill: url(#linear-gradient);
               }
             </style>
-            <linearGradient id="linear-gradient" x1="-0.04" y1="144.04" x2="431.96" y2="144.04" gradientUnits="userSpaceOnUse">
+            <linearGradient id="linear-gradient" x1="-0.04" y1="144.04" x2="431.96" y2="144.04"
+              gradientUnits="userSpaceOnUse">
               <stop offset="0" />
               <stop offset="0.01" stop-color="#24204e" />
               <stop offset="1" stop-color="#006a80" />
@@ -174,6 +179,8 @@
           emailInput.val("");
           signupForm.hide();
           $("#message").show();
+          // ga analytics here
+          ga("send", "event", "Form", "Sign up", "Path MLP");
         }
       });
     })(jQuery);
