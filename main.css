@@ -45,8 +45,7 @@ header svg {
 .header-content p,
 .sign-up p:nth-of-type(1),
 .sign-up p,
-.info p:nth-of-type(1),
-.info p:nth-of-type(2) {
+.info {
   font-size: 18px;
   margin: 0 auto 20px auto;
   max-width: 620px;
@@ -95,9 +94,13 @@ header svg {
   margin-bottom: 10px;
 } */
 
-.info p:nth-of-type(1) {
+.info p {
   font-weight: 100;
   font-size: 16px;
+}
+
+.info p:last-of-type {
+  margin-bottom: 40px;
 }
 
 .accent-divider {
@@ -268,8 +271,7 @@ footer .copyright {
   .header-content p,
   .sign-up p:nth-of-type(1),
   .sign-up p,
-  .info p:nth-of-type(1),
-  .info p:nth-of-type(2) {
+  .info p {
     font-size: 22px;
   }
 
@@ -277,7 +279,7 @@ footer .copyright {
     font-size: 30px;
   } */
 
-  .info p:nth-of-type(1) {
+  .info p {
     font-size: 18px;
   }
 
