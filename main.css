@@ -14,12 +14,6 @@ body {
   position: relative;
   background: #fffff5 url("./images/banner-v3.jpg") no-repeat center top;
   background-size: 100vw;
-  /* disable user copy/paste */
-  -webkit-user-select: none;
-  -webkit-touch-callout: none;
-  -moz-user-select: none;
-  -ms-user-select: none;
-  user-select: none;
 }
 
 header {
@@ -41,8 +35,6 @@ header svg {
 .header-content {
   position: relative;
   z-index: 1;
-  -webkit-transform: translate(-50%, -50%);
-  -ms-transform: translate(-50%, -50%);
   transform: translate(-50%, -50%);
   left: 50%;
   top: 50%;
@@ -53,8 +45,7 @@ header svg {
 .header-content p,
 .sign-up p:nth-of-type(1),
 .sign-up p,
-.info p:nth-of-type(1),
-.info p:nth-of-type(2) {
+.info {
   font-size: 18px;
   margin: 0 auto 20px auto;
   max-width: 620px;
@@ -75,10 +66,7 @@ header svg {
   border-radius: 10px;
   color: white;
   font-weight: bold;
-  display: -webkit-box; /* OLD - iOS 6-, Safari 3.1-6, BB7 */
-  display: -ms-flexbox; /* TWEENER - IE 10 */
-  display: -webkit-flex; /* NEW - Safari 6.1+. iOS 7.1+, BB10 */
-  display: flex; /* NEW, Spec - Firefox, Chrome, Opera */
+  display: flex;
   align-items: center;
   justify-content: center;
   text-decoration: none;
@@ -94,7 +82,7 @@ header svg {
 }
 
 .info {
-  padding: 0 20px 20px;
+  padding: 20px;
 }
 
 .info p {
@@ -106,9 +94,13 @@ header svg {
   margin-bottom: 10px;
 } */
 
-.info p:nth-of-type(1) {
+.info p {
   font-weight: 100;
   font-size: 16px;
+}
+
+.info p:last-of-type {
+  margin-bottom: 40px;
 }
 
 .accent-divider {
@@ -125,10 +117,7 @@ header svg {
 }
 
 .cards {
-  display: -webkit-box; /* OLD - iOS 6-, Safari 3.1-6, BB7 */
-  display: -ms-flexbox; /* TWEENER - IE 10 */
-  display: -webkit-flex; /* NEW - Safari 6.1+. iOS 7.1+, BB10 */
-  display: flex; /* NEW, Spec - Firefox, Chrome, Opera */
+  display: flex;
   flex-wrap: wrap;
   align-items: top;
   justify-content: center;
@@ -206,10 +195,7 @@ hr {
 
 /* mailchimp */
 .input-container {
-  display: -webkit-box; /* OLD - iOS 6-, Safari 3.1-6, BB7 */
-  display: -ms-flexbox; /* TWEENER - IE 10 */
-  display: -webkit-flex; /* NEW - Safari 6.1+. iOS 7.1+, BB10 */
-  display: flex; /* NEW, Spec - Firefox, Chrome, Opera */
+  display: flex;
   flex-direction: column;
   max-width: 320px;
   margin: 0 auto;
@@ -252,10 +238,7 @@ p.disclaimer {
 }
 
 footer {
-  display: -webkit-box !important; /* OLD - iOS 6-, Safari 3.1-6, BB7 */
-  display: -ms-flexbox !important; /* TWEENER - IE 10 */
-  display: -webkit-flex !important; /* NEW - Safari 6.1+. iOS 7.1+, BB10 */
-  display: flex !important; /* NEW, Spec - Firefox, Chrome, Opera */
+  display: flex !important;
   flex-direction: column;
   align-items: center;
   justify-content: center;
@@ -288,8 +271,7 @@ footer .copyright {
   .header-content p,
   .sign-up p:nth-of-type(1),
   .sign-up p,
-  .info p:nth-of-type(1),
-  .info p:nth-of-type(2) {
+  .info p {
     font-size: 22px;
   }
 
@@ -297,7 +279,7 @@ footer .copyright {
     font-size: 30px;
   } */
 
-  .info p:nth-of-type(1) {
+  .info p {
     font-size: 18px;
   }
 
